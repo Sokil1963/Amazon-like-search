@@ -82,6 +82,7 @@
                                th:checked="${#lists.contains(selectedCategories, facet.id)}"
                                onchange="document.getElementById('facetForm').submit()" />
                         <span th:text="${facet.name}">Category Name</span>
+                        <span class="count" th:text="'(' + ${facet.count} + ')'"> (10)</span>
                     </label>
                 </div>
                 <div th:if="${#lists.isEmpty(categoryFacets)}" style="color: #999; font-size: 0.85rem;">No categories found</div>
