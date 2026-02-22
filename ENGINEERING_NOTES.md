@@ -28,5 +28,3 @@ Requirements coverage
 - Search: partial matches via ILIKE, paginated results implemented.
 - Facets: Brand and Category multi-select implemented; counts update based on active filters.
 - URL State: search and filters reflected in the URL.
-
-If you want, I can shorten this further to a single paragraph, add exact SQL examples used, or produce a short README snippet explaining how to deploy the app to Vercel/Netlify + Supabase.
