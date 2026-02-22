@@ -26,6 +26,7 @@ public interface BrandRepository extends JpaRepository<Brand, Long> {
       )
     GROUP BY b.id, b.name
     ORDER BY cnt DESC
+    LIMIT 50
     """, nativeQuery = true)
     List<Object[]> countProducts(
             @Param("query") String query,

@@ -20,6 +20,7 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
       AND (:hasBrandFilter = false OR p.brand_id IN (:brandIds))
     GROUP BY c.id, c.name
     ORDER BY cnt DESC
+    LIMIT 50
     """, nativeQuery = true)
     List<Object[]> countProducts(
             @Param("query") String query,
